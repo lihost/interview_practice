@@ -6,7 +6,7 @@ This contains coding practice done and questions faced during interviews.
 All contributions are most welcome. Please fork it and contribute.
 
 <h3>Note</h3>
-* JDK7/Eclipse has been used while working on these coding assignments/interview sessions.
+* JDK8/Eclipse has been used while working on these coding assignments/interview sessions.
 
 <h3>#src_includes</h3>
 	- Bit level programmnig
