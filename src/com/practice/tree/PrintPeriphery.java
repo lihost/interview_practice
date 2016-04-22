@@ -13,9 +13,9 @@ package com.practice.tree;
  * 
  * 
  * 	- My Approach - After some analysis I figured out that boundary or periphery of a 
- * 					binary tree is nothing but PRE-ORDER traversal of left subtree(without 
- * 					printing internal nodes) and POST-ORDER traversal of right subtree(without 
- * 					printing internal nodes)
+ * 			binary tree is nothing but PRE-ORDER traversal of left subtree(without 
+ * 			printing internal nodes) and POST-ORDER traversal of right subtree(without 
+ * 			printing internal nodes)
  * 
  * 		1. Print PRE-ORDER of left subtree excluding internal nodes
  * 		2. Print POST-ORDER of right subtree excluding internal nodes
