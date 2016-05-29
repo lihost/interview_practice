@@ -9,6 +9,7 @@ All contributions are most welcome. Please fork it and contribute.
 * JDK8/Eclipse has been used while working on these coding assignments/interview sessions.
 
 <h3>#src_includes</h3>
+	- Arrays
 	- Bit level programmnig
 	- Dynamic programming
 	- Hashing
