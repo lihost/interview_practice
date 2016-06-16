@@ -5,10 +5,11 @@ package com.practice.tree;
  * Find PREORDER traversal from PostOrder and InOrder.
  * 
  * step 1 - last element of postOrder will be the root of tree
- * step 2 - after that look into inOrder array to determine the location of that root, left side of the array is left subtree and right side is 
- * right subtree of the tree 
+ * step 2 - after that look into inOrder array to determine the location of that root, 
+ * 			left side of the array is left subtree and right side is right subtree of the tree 
  * step 3 - by using that index we need to find out element in the left which is root
- * step 4 - similarly we do for left subtree, main idea is to determine indexes of left subtree first then right subtree by looking into inOrder array
+ * step 4 - similarly we do for left subtree, main idea is to determine indexes of left subtree 
+ * 			first then right subtree by looking into inOrder array
  * 
  * 
  */
