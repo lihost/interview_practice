@@ -7,10 +7,11 @@ import java.util.Arrays;
  * @author tsohil
  * 
  * step 1 - first element of preOrder will be the root of tree
- * step 2 - after that look into inOrder array to determine the location of that root, left side of the array is left subtree and right side is 
- * right subtree of the tree 
+ * step 2 - after that look into inOrder array to determine the location of that root, 
+ * 			left side of the array is left subtree and right side is right subtree of the tree 
  * step 3 - by using that index we need to find out element in the right which is root
- * step 4 - similarly we do for left subtree, main idea is to determine indexes of right subtree first then left subtree by looking into inOrder array
+ * step 4 - similarly we do for left subtree, main idea is to determine indexes of right subtree 
+ * 			first then left subtree by looking into inOrder array
  * step 5 - in this final step we will reverse the resultant array to get postOrder traversal
  * 
  */
