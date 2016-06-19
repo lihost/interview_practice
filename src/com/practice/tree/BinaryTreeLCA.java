@@ -5,12 +5,13 @@ package com.practice.tree;
  *
  */
 class Node {
-    public int data;
-    public Node right;
-    public Node left;
+    int data;
+    Node right;
+    Node left;
 	
     public Node(int data) {
         this.data = data;
+        this.right = this.left = null;
     }
 }
 
