@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 /**
  * Finding longest increasing subsequence with HashMap implementation
+ * 
+ * e.g. {5,7,3,99,25,33,55,2,9,1}, size of LIS is 5 with sequence {5,7,25,22,55}
  */
 public class LongestIncreasingSubSequenceWithHM {
     
 	public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-    	
     	
         int sequenceSize;
         
