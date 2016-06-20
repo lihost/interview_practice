@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * Printing POSTORDER from PreOrder and InOrder traversals
- * @author tsohil
+ * @author sohil
  * 
  * step 1 - first element of preOrder will be the root of tree
  * step 2 - after that look into inOrder array to determine the location of that root, 
