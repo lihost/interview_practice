@@ -4,7 +4,7 @@ import java.util.Arrays;
 /**
  * Print Right View of a Binary Tree  - http://www.geeksforgeeks.org/print-right-view-binary-tree-2/
  * 
- * @author tsohil
+ * @author sohil
  *
  */
 public class PrintRightView {
