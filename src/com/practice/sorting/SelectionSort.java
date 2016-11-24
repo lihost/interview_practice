@@ -11,7 +11,7 @@ public class SelectionSort {
 	public static int[] selectionSort(int[] arr){
 		int len = arr.length;
 		
-		for(int i=0; i<len; i++){
+		for(int i=0; i<len-1; i++){
 			int min = i;
 			int j;
 			
