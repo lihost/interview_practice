@@ -2,6 +2,12 @@ package com.practice.tree;
 
 import sun.misc.Queue;
 
+/**
+ * Print all nodes having only one child in a Binary tree
+ * 
+ * @author Sohil
+ *
+ */
 public class HalfNodesInBinaryTree {
 	
 	public static int numberOfHalfNodes(Node root) throws InterruptedException {
@@ -49,7 +55,6 @@ public class HalfNodesInBinaryTree {
         try {
 			System.out.println("Number of half nodes in Tree: "+numberOfHalfNodes(root));
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
