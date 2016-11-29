@@ -1,5 +1,11 @@
 package com.practice.tree;
 
+/**
+ * Printing height of a Binary tree
+ * 
+ * @author Sohil
+ *
+ */
 public class HeightOfBinaryTree {
 	
 	public static int heightOfBinaryTree(Node root) {
