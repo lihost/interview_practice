@@ -10,7 +10,7 @@ All contributions are most welcome. Please fork it and contribute.
 
 <h3>#src_includes</h3>
 	- Arrays
-	- Bit level programmnig
+	- Bit level programming
 	- Dynamic programming
 	- Hashing
 	- Design Patterns
@@ -18,3 +18,5 @@ All contributions are most welcome. Please fork it and contribute.
 	- Strings
 	- Tree
 	- Hackerrank
+	- Hackerearth
+	- misc
