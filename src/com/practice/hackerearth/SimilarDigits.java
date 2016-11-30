@@ -56,6 +56,12 @@ public class SimilarDigits {
 		this.addKeyValue(9, "wxyz");
 	}
 	
+	/**
+	 * Adding key-value pair to the structure
+	 * @param val
+	 * @param str
+	 * @return
+	 */
 	public SimilarDigits addKeyValue(Integer val, String str) {
 		for(Character c: str.toCharArray()){
 			this.charMap.put(c, val);
@@ -85,16 +91,17 @@ public class SimilarDigits {
 
 			char[] cArr = strArr[i].toCharArray();
 			
+			//building number sequence for individual strings
 			for(int j=0; j<cArr.length; j++){
 				sb.append(this.charMap.get(cArr[j]));
 			}
 			
-
+			//parse number sequence as integer
 			Integer key = Integer.parseInt(sb.toString().trim());
 
 			ArrayList<String> valueList;
 			
-			//checking if list is present in map
+			//checking if list is present in TreeMap
 			if(map.get(key) == null) {
 				valueList = new ArrayList<String>();
 			} else {
@@ -112,6 +119,8 @@ public class SimilarDigits {
 		 */
 		for(Integer k: map.keySet()){
 			ArrayList<String> aList = map.get(k);
+			
+			//sorting string list in alphabetical order
 			Collections.sort(aList);
 			
 			Iterator<String> listIterator = aList.iterator();
@@ -125,11 +134,14 @@ public class SimilarDigits {
 	public static void main(String[] args){
 		
 		Scanner s = new Scanner(System.in);
+		
+		// number of strings
         int N = s.nextInt();
         s.nextLine();
         String[] strArr = new String[N];
         int itr=0;
         
+        // accepting all strings from input
         while(N>0){
         	strArr[itr++] = s.nextLine();
         	N--;
