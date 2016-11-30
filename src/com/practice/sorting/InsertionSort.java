@@ -14,6 +14,11 @@ public class InsertionSort {
 			int temp = arr[i];
 			int j;
 			
+			/**
+			 * Iterating over sublist arr[0..i-1] identifying any
+			 * element > key, if 'yes' then keep swapping so that
+			 * minimum number reaches to its position
+			 */
 			for(j=i-1; j>=0 && temp < arr[j]; j--){
 				arr[j+1] = arr[j];
 			}
