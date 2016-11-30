@@ -2,6 +2,12 @@ package com.practice.tree;
 
 import sun.misc.Queue;
 
+/**
+ * Level Order traversal in a Binary Tree
+ * 
+ * @author Sohil
+ *
+ */
 public class PrintLevelOrder {
 	
 	public static void printLevelOrder(Node root) throws InterruptedException {
@@ -42,7 +48,6 @@ public class PrintLevelOrder {
 		try {
 			printLevelOrder(root);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
