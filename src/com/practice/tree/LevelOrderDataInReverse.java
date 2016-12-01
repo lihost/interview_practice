@@ -4,6 +4,12 @@ import java.util.Stack;
 
 import sun.misc.Queue;
 
+/**
+ * Printing level order data of a tree in reverse order
+ * 
+ * @author Sohil
+ *
+ */
 public class LevelOrderDataInReverse {
 	
 	public static void printLevelOrderDataInReverse(Node root) throws InterruptedException {
