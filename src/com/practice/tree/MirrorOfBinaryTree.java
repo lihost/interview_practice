@@ -2,6 +2,12 @@ package com.practice.tree;
 
 import sun.misc.Queue;
 
+/**
+ * Printing the mirror of binary tree
+ * 
+ * @author Sohil
+ *
+ */
 public class MirrorOfBinaryTree {
 	
 	public static Node mirrorOfBinaryTree(Node root) {
