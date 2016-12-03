@@ -29,6 +29,7 @@ public class GraphAdjList {
 	}
 
 	/**
+	 * Adding a vertex into graph
 	 * 
 	 * @param v
 	 * @return
@@ -43,6 +44,13 @@ public class GraphAdjList {
 		return true;
 	}
 	
+	/**
+	 * Adding an edge to the graph
+	 * 
+	 * @param v - start vertex
+	 * @param w - end vertex
+	 * @return - true or false for edge added successfully
+	 */
 	public Boolean addEdge(Character v, Character w) {
 		if(!this.graphAdjList.containsKey(v) || !this.graphAdjList.containsKey(w)){
 			return false;
@@ -59,6 +67,13 @@ public class GraphAdjList {
 		return numOfEdges;
 	}
 
+	/**
+	 * Get list of edges of a vertex
+	 * 
+	 * @param v - vertex for which edges needed to get
+	 * @return - ArrayList of associated edges
+	 * @throws IllegalArgumentException
+	 */
 	public ArrayList<Character> getEdgeList(Character v) throws IllegalArgumentException{
 		if(!this.graphAdjList.containsKey(v)) {
 			throw new IllegalArgumentException("Node "+v+" not found");
@@ -84,7 +99,7 @@ public class GraphAdjList {
 		System.out.println("number of vertices: "+g.getNumOfVertices());
 		System.out.println("number of edges: "+g.getNumOfEdges());
 		
-		System.out.println("edgeList of node c: "+g.getEdgeList('c').toString());
+		System.out.println("List of edges of vertex c: "+g.getEdgeList('c').toString());
 		
 	}
 }
