@@ -15,6 +15,14 @@ import sun.misc.Queue;
  */
 public class BFS extends GraphAdjList {
 	
+	/**
+	 * BFS for a vertex
+	 * 
+	 * @param g - graph to be searched
+	 * @param start - start vertex for the search operation in graph g
+	 * @param goal - goal vertex to be searched in graph g
+	 * @throws InterruptedException
+	 */
 	public void bfs(GraphAdjList g, Character start, Character goal) throws InterruptedException {
 		Queue<Character> q = new Queue<Character>();
 		// Set to keep track of visited nodes
