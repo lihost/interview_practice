@@ -17,6 +17,7 @@ All contributions are most welcome. Please fork it and contribute.
 	- Sorting
 	- Strings
 	- Tree
+	- Graph
 	- Hackerrank
 	- Hackerearth
 	- misc
