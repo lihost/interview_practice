@@ -6,6 +6,12 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
+/**
+ * Adjacency Matrix implementation of Graph
+ * 
+ * @author Sohil
+ *
+ */
 public class GraphAdjMatrix {
 
 	private int numOfVertices;
