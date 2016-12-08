@@ -2,10 +2,7 @@ package com.practice.graph;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -14,14 +11,14 @@ public class GraphAdjMatrix {
 	private int numOfVertices;
 	private int numOfEdges;
 	private Set<Integer> verticesSet;
-	private final int defaultNumVertices = 5;
+	private final int DEFAULTNUMVERTICES = 5;
 	private int[][] adjMatrix;
 	
 	public GraphAdjMatrix() {
 		this.numOfVertices = 0;
 		this.numOfEdges = 0;
 		this.verticesSet = new TreeSet<Integer>();
-		this.adjMatrix = new int[this.defaultNumVertices][this.defaultNumVertices];
+		this.adjMatrix = new int[this.DEFAULTNUMVERTICES][this.DEFAULTNUMVERTICES];
 	}
 
 	public int getNumOfVertices() {
@@ -202,9 +199,7 @@ public class GraphAdjMatrix {
 		return customWeightedVertices; 
 	}
 	
-	
-
-	
+		
 	public static void main(String[] args) {
 		GraphAdjMatrix gMatrix = new GraphAdjMatrix();
 		/*gMatrix.addEdge(1, 2);
@@ -214,12 +209,15 @@ public class GraphAdjMatrix {
 		gMatrix.addEdge(4, 2);
 		gMatrix.addEdge(4, 3);
 		*/
+		
+		//test2
 		gMatrix.addEdge(1, 2, 100);
 		gMatrix.addEdge(1, 3, 200);
 		gMatrix.addEdge(1, 4, 50);
 		gMatrix.addEdge(2, 3, 75);
 		gMatrix.addEdge(4, 2, 45);
 		gMatrix.addEdge(4, 3, 85);
+		
 		
 		System.out.println("Sum of InDegree weights for vertices:");
 		int[] inDegreeWeights = gMatrix.getInDegreeWeights();
@@ -247,7 +245,5 @@ public class GraphAdjMatrix {
 		System.out.println("\nSorted List of custom weighted vertices: ");
 		System.out.println(gMatrix.getCustomWeightedVertices().toString());
 		
-		//System.out.println("\nDijikstra's Shortest Path: ");
-		//System.out.println(gMatrix.dijkstrasPath(1).toString());
 	}
 }
