@@ -35,6 +35,12 @@ public class DijkstrasGraph{
 		this.verticesSet.add(end);
 	}
 	
+	/**
+	 * Dijkstra's shortest path from any starting vertex
+	 * 
+	 * @param v - start vertex
+	 * @return - Map of vertices and their distances from start vertex
+	 */
 	public Map<Integer, Integer> dijkstrasPath(int v) {
 		//complete list of all vertices in graph
 		Set<Integer> verticesSet = this.verticesSet;
@@ -114,9 +120,11 @@ public class DijkstrasGraph{
 		gMatrix.addEdge(7, 3, 4);
 		gMatrix.addEdge(7, 4, 5);
 		
+		//start vertex
+		int start = 1;
 				
-		System.out.println("\nDijikstra's Shortest Path: ");
-		System.out.println(gMatrix.dijkstrasPath(1).toString());
+		System.out.println("\nDijikstra's Shortest Path from vertex: "+start);
+		System.out.println(gMatrix.dijkstrasPath(start).toString());
 		
 		
 	}
